@@ -31,6 +31,7 @@ import { KattisContestParser } from './contest/KattisContestParser';
 import { KEPUZContestParser } from './contest/KEPUZContestParser';
 import { KilonovaContestParser } from './contest/KilonovaContestParser';
 import { LanqiaoContestParser } from './contest/LanqiaoContestParser';
+import { LeetCodeContestParser } from './contest/LeetCodeContestParser';
 import { LibreOJContestParser } from './contest/LibreOJContestParser';
 import { LightOJContestParser } from './contest/LightOJContestParser';
 import { LuoguContestParser } from './contest/LuoguContestParser';
@@ -107,6 +108,7 @@ import { KattisProblemParser } from './problem/KattisProblemParser';
 import { KEPUZProblemParser } from './problem/KEPUZProblemParser';
 import { KilonovaProblemParser } from './problem/KilonovaProblemParser';
 import { LanqiaoProblemParser } from './problem/LanqiaoProblemParser';
+import { LeetCodeProblemParser } from './problem/LeetCodeProblemParser';
 import { LibraryCheckerOldProblemParser } from './problem/LibraryCheckerOldProblemParser';
 import { LibraryCheckerProblemParser } from './problem/LibraryCheckerProblemParser';
 import { LibreOJProblemParser } from './problem/LibreOJProblemParser';
@@ -300,6 +302,9 @@ export const parsers: Parser[] = [
 
   new LanqiaoProblemParser(),
   new LanqiaoContestParser(),
+
+  new LeetCodeProblemParser(),
+  new LeetCodeContestParser(),
 
   new LibraryCheckerProblemParser(),
   new LibraryCheckerOldProblemParser(),
